@@ -45,7 +45,7 @@
 width: 1200px;
 padding: 0 15px;
  display: flex;
-  justify-content: space-between;
+  
   align-items: center;
 
   
@@ -458,6 +458,7 @@ font-family: 'Roboto',sans-serif ;
     text-align: center;
     text-transform: uppercase;
     color: var(--main-light);
+    margin: 0px;
 }
 
 .heading-team{
@@ -972,3 +973,6 @@ opacity: 0;
       transform: translateY(0);
       
     }
+    .card:hover:focus-visible .overlay{
+    outline: -webkit-focus-ring-color auto 1px;
+}
