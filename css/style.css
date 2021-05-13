@@ -92,7 +92,8 @@ padding: 0 15px;
 display: flex;
  align-items: center;
  padding-left: 0px;
- margin: 0px;
+ margin: auto;
+ margin-right: 0px;
  align-items: center;
  align-self: center;
  
@@ -965,13 +966,13 @@ opacity: 0;
     letter-spacing: 0.03em;
     color: var(--main-light);
     background-color: var(--backgraund-portfolio);
-    transition: transform 250ms var(--timing-function);
+    transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function);
     }
     
     .card:hover .overlay, .card:focus .overlay{
       opacity: 1;
       transform: translateY(0);
-      
+      transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function);
     }
     .card:hover:focus-visible .overlay{
     outline: -webkit-focus-ring-color auto 1px;
